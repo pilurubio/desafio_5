@@ -1,0 +1,885 @@
+/* reseteo */
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+/* ruteo fuentes */    
+    @font-face { 
+        font-family: 'Bebas Neue'; 
+        src: url(assets/fonts/BebasNeue-Regular.ttf); 
+    } 
+    
+/* color de fondo */    
+    body{
+        background-color: rgb(250, 250, 250);
+    }
+
+
+/* DESKTOP */    
+
+    /* estilos header */
+        header{
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            z-index: 1;
+            padding: 25px 100px;
+            background-color: rgba(250, 250, 250, 0.9);
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }        
+
+        header nav a{
+            text-decoration: none;
+            font-family: 'Montserrat';
+            font-weight: 300;
+            font-size: 13pt;
+            letter-spacing: 3pt;
+            color:#243746;
+            text-align: center;
+            margin: 0px 5px;
+        } 
+
+        .desplegable{
+            border: none;
+            background-color: transparent;
+        }
+
+        .submenu{
+            text-decoration: none;
+            font-family: 'Montserrat';
+            font-weight: 300;
+            font-size: 11pt;
+            letter-spacing: 3pt;
+            color:#243746;
+            margin: 0px;
+        } 
+
+        .submenu1{
+            text-decoration: none;
+            font-family: 'Montserrat';
+            font-weight: 400;
+            font-size: 11pt;
+            letter-spacing: 3pt;
+            color:#243746;
+            margin: 0px;
+        } 
+
+        .logo-navegador{
+            height: 110px;
+            width: 110px;
+        } 
+
+        .menu{
+            transition: all 0.5s;
+        }
+
+        .menu:hover{
+            background-color: #f3e500;
+        }
+
+        .hamburguesa{
+            border: none;
+        }
+
+    /* estilos inicio */
+        #inicio{
+            background-image: url(assets/img/principal.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: bottom;
+            margin-top:80px;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        } 
+
+        .titulo{
+            font-family: 'Bebas Neue';
+            font-weight: normal;
+            font-size: 150pt;
+            letter-spacing: 30pt;
+            line-height: 150pt;
+            color: rgb(250,250,250, 0.9);
+            text-align: center;
+        } 
+        
+        .destacado{
+            font-family: 'Montserrat';
+            font-weight: 200;
+            font-size: 25pt;
+            letter-spacing: 7pt;
+            line-height: 35pt;
+            color:rgb(250,250,250);
+            text-align: center;
+        } 
+
+        .resaltado{
+            color: #243746;
+            background-color: rgb(243, 229, 0, 0.9);
+        } 
+
+    /* estilos galeria */
+        #galeria{
+            padding-top: 200px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        h2{
+            font-family: 'Bebas Neue';
+            font-weight: normal;
+            font-size: 50pt;
+            letter-spacing: 7pt;
+            color:#243746;
+            border-left: solid #f3e500 85px;
+            padding-top: 5px;
+            padding-left: 15px;
+        }
+
+        h3{
+            font-family: 'Averia Serif Libre';
+            font-weight: 400;
+            font-size: 22pt;
+            color:#243746;
+            margin-top: 20px;
+            margin-left: 100px;
+        }
+
+        .subrayado{
+            text-decoration: underline;
+            text-underline-position: under;
+            text-decoration-color: #f3e500;
+            text-decoration-thickness: 5px;
+        }
+
+        .altura-carousel{
+            height: 70vh;
+            margin-top: 100px;
+        }
+
+        .grilla-galeria{
+            margin: 100px 200px 50px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 200px 200px 200px;
+            gap: 30px;
+        }
+
+        #galeria .grilla-galeria div{
+            background-color: rgb(200, 200, 200);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #galeria .grilla-galeria div p{
+            font-family: 'Montserrat';
+            font-weight: 300;
+            font-size: 13pt;
+            letter-spacing: 3pt;
+            color:white;
+            text-align: center;
+        }
+
+        .boton1{
+            border: none;
+            text-decoration: none;
+            font-family: 'Bebas Neue';
+            font-size: 15pt;
+            letter-spacing: 5pt;
+            color:#243746;
+            text-align: center;
+            background-color: #f3e500;
+            padding-top: 3px;
+            padding-left: 6px;
+            margin-right: 10px;
+            cursor: pointer;
+            align-self: center;
+        }
+
+    /* estilos actividades */
+        #actividades{
+            padding-top: 200px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .grilla-actividades{
+            margin: 50px 100px 0px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            column-gap: 30px;
+        }
+
+        .estilos-card{
+            border: none;
+            transition: all 1s;
+        }
+        
+        .estilos-card:hover{
+            transform: scale(1.1);
+        }
+
+        .alinear-card{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+        }
+
+        h4{
+            font-family: 'Bebas Neue';
+            font-weight: lighter;
+            font-size: 40pt;
+            line-height: 40pt;
+            letter-spacing: 7pt;
+            padding-top: 10px;
+            color:white;
+        }
+
+        .texto-actividades{
+            font-family: 'Montserrat';
+            font-weight: 300;
+            font-size: 10.5pt;
+            letter-spacing: 1pt;
+            word-spacing: 1pt;
+            line-height: 15pt;
+            color: white;
+            margin-bottom: 40px;
+        }
+
+        .boton2{
+            border: none;
+            text-decoration: none;
+            font-family: 'Bebas Neue';
+            font-size: 15pt;
+            letter-spacing: 5pt;
+            color:#243746;
+            text-align: center;
+            background-color: white;
+            padding-top: 3px;
+            padding-left: 6px;
+            margin-right: 10px;
+            cursor: pointer;
+            align-self: center;
+        }
+
+    /* estilos footer */
+        footer{
+            margin-top: 200px;
+            padding: 25px 100px;
+            background-color: #131e29;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        } 
+
+        footer ul li{
+            display: inline;
+            list-style-type: none;
+        }
+
+        footer ul li a{
+            text-decoration: none;
+            font-family: 'Montserrat';
+            font-weight: 300;
+            font-size: 11pt;
+            letter-spacing: 4pt;
+            color:white;
+            text-align: center;
+            margin-left: 15px;
+        }
+
+        .logo-footer{
+            height: 70px;
+            width: 70px;
+        }
+
+        .iconos{
+            width: 20px;
+            margin-left: 15px;
+        }
+
+        .menu-footer{
+            transition: all 0.5s;
+        }
+
+        .menu-footer:hover{
+            color:#131e29;
+            background-color: rgb(250, 250, 250);
+        }
+
+
+/* APLICACIÓN DE MEDIA QUERIES */
+
+    /* menor a 1200*/
+        @media screen and (max-width: 1200px){
+    
+            header nav a{
+                text-decoration: none;
+                font-family: 'Montserrat';
+                font-weight: 300;
+                font-size: 12pt;
+                letter-spacing: 2pt;
+                color:#243746;
+                text-align: center;
+                margin-left: 20px;
+            } 
+    
+            .logo-navegador{
+                height: 100px;
+                width: 100px;
+            } 
+
+            .titulo{
+                font-family: 'Bebas Neue';
+                font-weight: normal;
+                font-size: 130pt;
+                letter-spacing: 25pt;
+                line-height: 130pt;
+                color: rgb(250,250,250, 0.8);
+                text-align: center;
+            } 
+    
+            .destacado{
+                font-family: 'Montserrat';
+                font-weight: 200;
+                font-size: 22pt;
+                letter-spacing: 5pt;
+                line-height: 30pt;
+                color:rgb(250,250,250);
+                text-align: center;
+            } 
+
+            .grilla-galeria{
+                margin: 100px 100px 50px;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                grid-template-rows: 200px 200px 200px;
+                gap: 30px;
+            }
+            
+            .grilla-actividades{
+                margin: 50px 100px 0px;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 30px;
+            }
+
+            .boton1{
+                border: none;
+                text-decoration: none;
+                font-family: 'Bebas Neue';
+                font-size: 13pt;
+                letter-spacing: 3pt;
+                color:#243746;
+                text-align: center;
+                background-color: #f3e500;
+                padding-top: 2px;
+                padding-left: 5px;
+                margin-right: 10px;
+                cursor: pointer;
+                align-self: center;
+            }
+
+            .boton2{
+                border: none;
+                text-decoration: none;
+                font-family: 'Bebas Neue';
+                font-size: 13pt;
+                letter-spacing: 3pt;
+                color:#243746;
+                text-align: center;
+                background-color: #f3e500;
+                padding-top: 2px;
+                padding-left: 5px;
+                margin-right: 10px;
+                cursor: pointer;
+                align-self: center;
+            }
+
+            .botones3{
+                border: none;
+                text-decoration: none;
+                font-family: 'Bebas Neue';
+                font-size: 13pt;
+                letter-spacing: 3pt;
+                color:#243746;
+                text-align: center;
+                background-color: #f3e500;
+                padding-top: 2px;
+                padding-left: 5px;
+                margin-right: 10px;
+                cursor: pointer;
+            }
+
+        }
+    
+    /* menor a 1024 */        
+        @media screen and (max-width: 1024px){
+
+            header{
+                position: fixed;
+                top: 0;
+                right: 0;
+                left: 0;
+                z-index: 1;
+                padding: 25px 50px;
+                background-color: rgba(250, 250, 250, 0.9);
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+            } 
+
+            header nav a{
+                text-decoration: none;
+                font-family: 'Montserrat';
+                font-weight: 300;
+                font-size: 11pt;
+                letter-spacing: 1pt;
+                color:#243746;
+                text-align: center;
+                margin-left: 15px;
+            } 
+    
+            .logo-navegador{
+                height: 90px;
+                width: 90px;
+            } 
+
+            .titulo{
+                font-family: 'Bebas Neue';
+                font-weight: normal;
+                font-size: 110pt;
+                letter-spacing: 20pt;
+                line-height: 110pt;
+                color: rgb(250,250,250, 0.8);
+                text-align: center;
+            } 
+    
+            .destacado{
+                font-family: 'Montserrat';
+                font-weight: 200;
+                font-size: 20pt;
+                letter-spacing: 5pt;
+                line-height: 28pt;
+                color:rgb(250,250,250);
+                text-align: center;
+            } 
+
+            .grilla-galeria{
+                margin: 100px 100px 50px;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 150px 150px 150px 150px 150px;
+                gap: 30px;
+            }
+
+            footer{
+                margin-top: 200px;
+                padding: 25px 50px;
+                background-color: #131e29;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+            } 
+    
+            footer ul li a{
+                text-decoration: none;
+                font-family: 'Montserrat';
+                font-weight: 300;
+                font-size: 10pt;
+                letter-spacing: 2pt;
+                color:white;
+                text-align: center;
+                margin-left: 10px;
+            }
+    
+            .logo-footer{
+                height: 60px;
+                width: 60px;
+            }
+    
+            .iconos{
+                width: 15px;
+                margin-left: 10px;
+            }
+
+        }
+
+    /* menor a 768 */        
+        @media screen and (max-width: 768px){
+
+            header{
+                position: fixed;
+                top: 0;
+                right: 0;
+                left: 0;
+                z-index: 1;
+                padding: 20px 40px;
+                background-color: rgba(250, 250, 250, 0.9);
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+            }  
+
+            header nav a{
+                text-decoration: none;
+                font-family: 'Montserrat';
+                font-weight: 300;
+                font-size: 11pt;
+                letter-spacing: 1pt;
+                color:#243746;
+                text-align: center;
+                margin-left: 10px;
+            }  
+    
+            .logo-navegador{
+                height: 90px;
+                width: 90px;
+                margin-bottom: 15px;
+            } 
+
+            #inicio{
+                background-image: url(assets/img/principal.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: bottom;
+                margin-top: 100px;
+                width: 100%;
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            } 
+
+            .titulo{
+                font-family: 'Bebas Neue';
+                font-weight: normal;
+                font-size: 90pt;
+                letter-spacing: 15pt;
+                line-height: 90pt;
+                color: rgb(250,250,250, 0.8);
+                text-align: center;
+            } 
+    
+            .destacado{
+                font-family: 'Montserrat';
+                font-weight: 200;
+                font-size: 18pt;
+                letter-spacing: 3pt;
+                line-height: 25pt;
+                color:rgb(250,250,250);
+                text-align: center;
+            } 
+
+            h2{
+                font-family: 'Bebas Neue';
+                font-weight: normal;
+                font-size: 40pt;
+                letter-spacing: 5pt;
+                color:#243746;
+                border-left: solid #f3e500 85px;
+                padding-top: 5px;
+                padding-left: 15px;
+            }
+    
+            h3{
+                font-family: 'Averia Serif Libre';
+                font-weight: 400;
+                font-size: 18pt;
+                color:#243746;
+                margin-top: 20px;
+                margin-left: 100px;
+            }
+
+            footer{
+                margin-top: 200px;
+                padding: 20px 20px;
+                background-color: #131e29;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+            } 
+    
+            footer ul li a{
+                text-decoration: none;
+                font-family: 'Montserrat';
+                font-weight: 300;
+                font-size: 9pt;
+                letter-spacing: 1pt;
+                color:white;
+                text-align: center;
+                margin-left: 10px;
+            }
+    
+            .logo-footer{
+                display: none;
+            }
+
+        }
+
+    /* menor a 600 */        
+        @media screen and (max-width: 600px){
+
+            header{
+                position: fixed;
+                top: 0;
+                right: 0;
+                left: 0;
+                z-index: 1;
+                padding: 20px 20px;
+                background-color: rgba(250, 250, 250, 0.9);
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            header nav a{
+                text-decoration: none;
+                font-family: 'Montserrat';
+                font-weight: 300;
+                font-size: 9pt;
+                letter-spacing: 1pt;
+                color:#243746;
+                text-align: center;
+                margin-left: 7px;
+            } 
+    
+            .logo-navegador{
+                height: 80px;
+                width: 80px;
+                margin-bottom: 15px;
+            } 
+
+            #inicio{
+                background-image: url(assets/img/principal.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: bottom;
+                margin-top: 100px;
+                width: 100%;
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            } 
+
+            .titulo{
+                font-family: 'Bebas Neue';
+                font-weight: normal;
+                font-size: 70pt;
+                letter-spacing: 10pt;
+                line-height: 70pt;
+                color: rgb(250,250,250, 0.8);
+                text-align: center;
+            } 
+    
+            .destacado{
+                font-family: 'Montserrat';
+                font-weight: 200;
+                font-size: 16pt;
+                letter-spacing: 2pt;
+                line-height: 22pt;
+                color:rgb(250,250,250);
+                text-align: center;
+            } 
+
+            .grilla-galeria{
+                margin: 100px 100px 50px;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: repeat(8, 100px);
+                gap: 30px;
+            }
+
+            .grilla-actividades{
+                margin: 50px 100px 0px;
+                display: grid;
+                grid-template-columns: 1fr;
+                column-gap: 30px;
+                row-gap: 30px;
+            }
+    
+            footer ul li a{
+                text-decoration: none;
+                font-family: 'Montserrat';
+                font-weight: 300;
+                font-size: 8pt;
+                letter-spacing: 1pt;
+                color:white;
+                text-align: center;
+                margin-left: 10px;
+            }
+
+            .iconos{
+                width: 13px;
+                margin-left: 10px;
+            }
+
+        }
+
+    /* menor a 480 */        
+        @media screen and (max-width: 480px){
+                    
+            header{
+                display: none;
+            }
+
+            #inicio{
+                background-image: url(assets/img/principal.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: bottom;
+                margin-top: 0px;
+                width: 100vw;
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            } 
+
+            .titulo{
+                font-family: 'Bebas Neue';
+                font-weight: normal;
+                font-size: 50pt;
+                letter-spacing: 5pt;
+                line-height: 50pt;
+                color: rgb(250,250,250, 0.8);
+                text-align: center;
+            } 
+    
+            .destacado{
+                font-family: 'Montserrat';
+                font-weight: 200;
+                font-size: 13pt;
+                letter-spacing: 1pt;
+                line-height: 18pt;
+                color:rgb(250,250,250);
+                text-align: center;
+            } 
+
+            h2{
+                font-family: 'Bebas Neue';
+                font-weight: normal;
+                font-size: 30pt;
+                letter-spacing: 3pt;
+                color:#243746;
+                border-left: solid #f3e500 40px;
+                padding-top: 5px;
+                padding-left: 10px;
+            }
+    
+            h3{
+                font-family: 'Averia Serif Libre';
+                font-weight: 400;
+                font-size: 15pt;
+                color:#243746;
+                margin-top: 10px;
+                margin-left: 50px;
+            }
+
+            #galeria{
+                padding-top: 100px;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .grilla-galeria{
+                margin: 50px 50px;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: repeat(8, 100px);
+                gap: 25px;
+            }
+
+            #actividades{
+                padding-top: 100px;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .grilla-actividades{
+                margin: 50px 50px 0px;
+                display: grid;
+                grid-template-columns: 1fr;
+                column-gap: 30px;
+                row-gap: 25px;
+            }            
+
+            .texto-actividades{
+                font-family: 'Montserrat';
+                font-weight: 300;
+                font-size: 9pt;
+                letter-spacing: 1pt;
+                word-spacing: 1pt;
+                line-height: 14pt;
+                color: white;
+                margin-bottom: 40px;
+            }
+
+            footer{
+                margin-top: 100px;
+                padding: 20px 20px;
+                background-color: #131e29;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+            } 
+
+            footer ul li a{
+                text-decoration: none;
+                font-family: 'Montserrat';
+                font-weight: 300;
+                font-size: 6pt;
+                color:white;
+                text-align: center;
+                margin-left: 1px;
+            }
+
+            .iconos{
+                width: 8px;
+                margin-left: 3px;
+            }
+
+        }
+
+    /* menor a 320 */        
+        @media screen and (max-width: 320px){
+        
+            .grilla-galeria{
+                margin: 50px 50px;
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(15, 200px);
+                gap: 25px;
+            }
+            
+        }
